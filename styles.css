@@ -1,30 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
+  font-family: "League Spartan", system-ui, sans-serif;
 }
 
 html {
   font-size: 62.5%;
   /* 1rem = 10px */
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden;
   background-color: #212121;
+  color: #ddd;
+  scroll-behavior: smooth;
 }
 
 .header {
-  padding: 0 4.8rem;
+  padding: 0 10rem;
   height: 7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
+  transition: background-color 0.5s;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header .logo {
@@ -39,14 +48,16 @@ body {
 }
 
 .navbar-link:link,
-.navbar-link:visited {
+.navbar-link:visited,
+.nav-link.resume {
   display: inline-block;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 500;
   color: white;
   transition: all 0.3s;
+  font-weight: 400;
 }
 
 .navbar-link:hover,
@@ -63,11 +74,21 @@ body {
 .mobile-nav-icon {
   width: 4rem;
   height: 4rem;
-  color: #212529;
+  color: white;
 }
 
 .mobile-nav-icon[name="close-outline"] {
   display: none;
+}
+
+.nav-scrolled {
+  border-bottom: 1px solid #eceff133;
+}
+.nav-scrolled-resume-button {
+  background-color: #eceff1;
+  /* padding: 0.8rem; */
+  color: #212121;
+  border: 0;
 }
 
 /* ===========================================
@@ -78,8 +99,9 @@ Hero and Service Section Start
   width: 90%;
 
   padding: 9.6rem 0;
-  background-color: #a5d8ff;
+  /* background-color: #a5d8ff; */
   height: 90vh;
+  margin-top: 7rem;
 
   display: flex;
   justify-content: center;
@@ -95,6 +117,151 @@ Hero and Service Section Start
   font-size: 3.2rem;
 }
 
+/* Scrolling texts */
+.scrolling-text-container {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #ddd;
+  padding-top: 10px;
+}
+.scrolling-text-container::-webkit-scrollbar {
+  display: none;
+}
+.scrolling-text-r2l {
+  color: #212121;
+  font-size: 5vw;
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: 20px;
+  font-weight: 700;
+  /* word-spacing: 24px; */
+  text-transform: uppercase;
+  animation: scrolling-animation 2s linear infinite;
+}
+.scrolling-text-l2r {
+  color: #212121;
+  font-size: 5vw;
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: scrolling-animation2 2s linear infinite;
+}
+@keyframes scrolling-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 24px));
+  }
+}
+@keyframes scrolling-animation2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(24px);
+  }
+}
+
+/* About me */
+#about-div {
+  width: 90%;
+  /* border: 1px solid red; */
+  height: 500px;
+  display: grid;
+  margin: auto;
+  margin-bottom: 140px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#about-left {
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: center;
+}
+#about-left h1 {
+  font-weight: 400;
+  /* font-size: 1.6vw; */
+  font-size: 3rem;
+  padding: 3.4rem;
+  /* padding-right: 6rem; */
+}
+
+#about-right {
+}
+
+#about-right {
+  /* height: 600px; */
+  /* width: 600px; */
+  height: 120%;
+  width: 100%;
+  margin: auto;
+  /* border: 2px solid cyan; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* position: absolute; */
+  background-color: #212121;
+  box-sizing: border-box;
+}
+#about-right div {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: 200px;
+}
+.fs,
+.s,
+.t,
+.ft {
+  position: relative;
+  color: white;
+  /* padding: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-weight: 1000; */
+}
+.s:hover,
+.fs:hover,
+.t:hover,
+.ft:hover {
+  background-color: #ddd;
+  color: #212121;
+  transition: background-color 0.7s ease, color 0.3s ease;
+}
+#about-right h1 {
+  font-weight: 400;
+  font-size: 2vw;
+}
+.fs {
+  left: 50px;
+  top: 60px;
+  z-index: 400;
+  background-color: #212121;
+  color: #ddd;
+}
+.s {
+  top: 110px;
+  /* background-color: aqua; */
+  background-color: #252525;
+  z-index: 500;
+}
+.t {
+  top: -50px;
+  /* background-color: crimson; */
+}
+.ft {
+  left: -40px;
+  top: -10px;
+  /* z-index: 999; */
+  /* background-color: rebeccapurple; */
+  background-color: #212121;
+}
+
 /* ===========================================
 Responsive Codes 
 ======================================= */
@@ -104,7 +271,7 @@ Responsive Codes
   .mobile-navbar-btn {
     display: block;
     z-index: 999;
-    border: 2px solid #212529;
+    border: 1px solid white;
     color: #212529;
   }
 
@@ -114,13 +281,14 @@ Responsive Codes
 
   .header .logo {
     width: 40%;
+    margin-left: 20px;
   }
 
   .navbar {
     /* display: none; */
     width: 100%;
     height: 100vh;
-    background: #e7f5ff;
+    background: grey;
     position: absolute;
     top: 0;
     left: 0;
@@ -167,5 +335,31 @@ Responsive Codes
 
   .header .logo {
     width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  #about-div {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 10px;
+  }
+  #about-left > h1,
+  #about-right h1 {
+    font-size: 4vw;
+  }
+  #about-right {
+    height: 80%;
+    gap: 10px;
+  }
+  #about-right div {
+    height: 90px;
+  }
+  .fs,
+  .s,
+  .t,
+  .ft {
+    border: 2px solid red;
+    position: static;
+    /* margin: 10px 0px; */
   }
 }
