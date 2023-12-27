@@ -139,7 +139,7 @@ Hero and Service Section Start
   font-weight: 700;
   /* word-spacing: 24px; */
   text-transform: uppercase;
-  animation: scrolling-animation 2s linear infinite;
+  animation: scrolling-animation 12s linear infinite;
 }
 .scrolling-text-l2r {
   color: #212121;
@@ -149,7 +149,7 @@ Hero and Service Section Start
   margin-right: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  animation: scrolling-animation2 2s linear infinite;
+  animation: scrolling-animation2 12s linear infinite;
 }
 @keyframes scrolling-animation {
   0% {
@@ -263,6 +263,13 @@ Hero and Service Section Start
   background-color: #212121;
 }
 
+#stats-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid red;
+  width: 90%;
+  margin: auto;
+}
 /* ===========================================
 Responsive Codes 
 ======================================= */
