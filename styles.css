@@ -209,9 +209,11 @@ Hero and Service Section Start
   box-sizing: border-box;
 }
 #about-right div {
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   border-radius: 10px;
   height: 200px;
+  background-color: #2b2b2b;
+  border: 2px solid #eceff133;
 }
 .fs,
 .s,
@@ -223,14 +225,13 @@ Hero and Service Section Start
   display: flex;
   align-items: center;
   justify-content: center;
-  /* font-weight: 1000; */
 }
 .s:hover,
 .fs:hover,
 .t:hover,
 .ft:hover {
-  background-color: #ddd;
-  color: #212121;
+  /* background-color: #ddd; */
+  /* color: #212121; */
   transition: background-color 0.7s ease, color 0.3s ease;
 }
 #about-right h1 {
