@@ -42,3 +42,9 @@ document.getElementById("resume-button-1").addEventListener("click", () => {
     "https://drive.google.com/file/d/1VhjzuWsG7fjzTxYuKrHHUp6j8-F_-OOU/view?usp=sharing"
   );
 });
+
+document.getElementById("resume-button-2").addEventListener("click", () => {
+  window.open(
+    "https://drive.google.com/file/d/1VhjzuWsG7fjzTxYuKrHHUp6j8-F_-OOU/view?usp=sharing"
+  );
+});
