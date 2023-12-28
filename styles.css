@@ -612,13 +612,13 @@ Responsive Codes
   }
   .contacts div:nth-child(2) input,
    .contacts textarea {
-  width: 100%;
+  width: 90%;
   margin-top: 12px;
   padding: 12px;
 
 }
 #contacts-details h2{
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 }
