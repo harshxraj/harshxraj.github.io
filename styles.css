@@ -279,7 +279,7 @@ Hero and Service Section Start
 } */
 
 #about-right {
-  /* height: 600px; */
+  height: 600px;
   /* width: 600px; */
   /* height: 120%; */
   width: 100%;
@@ -530,7 +530,8 @@ Responsive Codes
   }
   #about-left > h1,
   #about-right h1 {
-    font-size: 4vw;
+    font-size: 2rem;
+    padding: 0;
   }
   #about-right {
     height: 80%;
@@ -547,6 +548,14 @@ Responsive Codes
     position: static;
     /* margin: 10px 0px; */
   }
+  .contacts {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 4rem;
+  }
+  #contacts-details{
+    margin-bottom: 60px;
+  }
+ 
 }
 
 @media (max-width: 700px) {
@@ -591,4 +600,25 @@ Responsive Codes
     width: 100px;
     height: 100px;
   }
+  #left-aboutme-icons div{
+    /* border: 1px solid rebeccapurple; */
+    padding: 1rem 2rem;
+  }
+  #about-right{
+    margin-top: -10px;
+  }
+  #about-div{
+    margin-bottom: -40px;
+  }
+  .contacts div:nth-child(2) input,
+   .contacts textarea {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+
+}
+#contacts-details h2{
+  font-size: 2rem;
+}
+
 }
