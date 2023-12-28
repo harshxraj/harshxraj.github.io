@@ -36,3 +36,9 @@ window.addEventListener("scroll", () => {
 
 //   const typed = new Typed(".typed-output", options);
 // });
+
+document.getElementById("resume-button-1").addEventListener("click", () => {
+  window.open(
+    "https://drive.google.com/file/d/1VhjzuWsG7fjzTxYuKrHHUp6j8-F_-OOU/view?usp=sharing"
+  );
+});
