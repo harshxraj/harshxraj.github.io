@@ -97,7 +97,7 @@ body {
   /* background-color: palegoldenrod; */
   justify-content: space-between;
   margin-top: 10px;
- width: 90%;
+  width: 90%;
   margin: auto;
   margin-top: 70px; */
   /* border: 1px solid red; */
@@ -134,10 +134,8 @@ body {
   /* background-image: url("github2.png"); */
 }
 #left-aboutme-icons div:first-child {
-  /* border: 1px solid #eceff1; */
   border: 1px solid rgba(236, 239, 241, 0.4);
   border-radius: 12px;
-  /* height: 30px;s */
   background-color: #2b2b2b;
 }
 #left-aboutme-icons div:hover {
@@ -147,13 +145,7 @@ body {
   border-radius: 12px;
   cursor: pointer;
 }
-#left-aboutme-icons div:nth-child(3):hover {
-  background-image: url("github2.png");
-  background-image: url("github2.png");
-}
-#github-logo {
-  background-image: url("github2.png");
-}
+
 #right-aboutme {
   /* border: 1px solid red; */
   display: flex;
@@ -289,7 +281,7 @@ Hero and Service Section Start
 #about-right {
   /* height: 600px; */
   /* width: 600px; */
-  height: 120%;
+  /* height: 120%; */
   width: 100%;
   margin: auto;
   /* border: 2px solid cyan; */
@@ -460,8 +452,16 @@ Responsive Codes
     color: #212529;
   }
 
-  .header {
+  /* .header {
     position: relative;
+  } */
+
+  .header {
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Stick it to the top */
+    width: 100%; /* Full width */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a visual effect */
+    z-index: 1000; /* Make sure it's above other elements */
   }
 
   .header .logo {
@@ -547,4 +547,40 @@ Responsive Codes
     position: static;
     /* margin: 10px 0px; */
   }
+}
+
+@media (max-width: 700px) {
+  #home{
+    /* border: 1px solid rebeccapurple; */
+    /* flex-direction: column-reverse; */
+    height:  70vh;
+    /* width: 95%; */
+    margin-top: -80px;
+  }
+  #right-aboutme img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  #right-aboutme{
+    /* border: 1px solid cadetblue; */
+    /* display: flex; */
+     /* margin: auto; */
+  }
+  #left-aboutme h2{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding-top: 5rem;
+
+  }
+  #left-aboutme{
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* border: 1px solid cyan; */
+  }
+
+  #about{
+    margin-top: -120px;
+  }
+  
 }
