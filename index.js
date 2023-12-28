@@ -25,3 +25,14 @@ window.addEventListener("scroll", () => {
     // document.querySelector(".nav-link.resume").style.color = "white";
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const options = {
+    strings: ["Full stack web developer"],
+    typeSpeed: 50, // Typing speed in milliseconds
+    backSpeed: 25, // Backspacing speed in milliseconds
+    loop: true, // Loop the animation infinitely
+  };
+
+  const typed = new Typed(".typed-output", options);
+});
