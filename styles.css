@@ -357,13 +357,99 @@ Hero and Service Section Start
 #stats-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 90%;
   margin: auto;
 }
 /* ===========================================
 Responsive Codes 
 ======================================= */
+
+
+
+
+.contacts {
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 4rem;
+  /* display: flex; */
+  /* justify-content: space-around; */
+}
+.contacts div {
+  /* border: 1px solid green; */
+  margin: auto;
+  /* margin-left: -40px; */
+  /* padding-left: 40px; */
+  --hsl: var(--hue), var(--saturation), var(--lightness);
+}
+.contacts div:nth-child(1) {
+  /* margin-top: 80px; */
+}
+#name-input {
+  --hue: 165;
+  --saturation: 82.26%;
+  --lightness: 51.37%;
+  /* background-color: rebeccapurple; */
+}
+#email-input {
+  --hue: 165;
+  --saturation: 82.26%;
+  --lightness: 51.37%;
+}
+#message-input {
+  --hue: 165;
+  --saturation: 82.26%;
+  --lightness: 51.37%;
+}
+
+.contacts div:nth-child(2) input,
+.contacts textarea {
+  gap: 12px;
+  width: 420px;
+  margin-top: 12px;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  font-family: "League Spartan", system-ui, sans-serif;
+  color: #eceff1;
+  background-color: #2b2b2b;
+  border: 1px solid #eceff133;
+}
+#message-input {
+  height: 200px;
+  resize: none;
+  margin-top: 5px;
+}
+#contacts-details{
+  /* border: 1px solid rebeccapurple; */
+  /* height: 100%; */
+  /* display: flex; */
+  /* flex-direction: column; */
+   /* justify-content: start; */
+   /* align-content: flex-start; */
+}
+#contacts-details h2 {
+  margin: 20px;
+  font-weight: 400;
+  font-size: 2.5rem;
+  /* text-align: left; */
+}
+#send-button {
+  padding:1em 3em;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  font-family: "League Spartan", system-ui, sans-serif;
+  font-size: 1.8rem;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 12px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 
 /* 980px  */
 @media (max-width: 62em) {
