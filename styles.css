@@ -348,10 +348,23 @@ Hero and Service Section Start
 
 #stats-div {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   /* border: 1px solid red; */
   width: 90%;
+  gap: 20px;
   margin: auto;
+}
+#stats-div div{
+  /* border: 3px solid cyan; */
+  display: flex;
+  justify-content: center;
+}
+#stats-div > div img{
+  max-width: 500px;
+  /* width: 3000px; */
+}
+#github-top-langs{
+  width: 420px;
 }
 /* ===========================================
 Responsive Codes 
@@ -685,5 +698,73 @@ Responsive Codes
   }
   .skillsBox{
     /* margin-right: 300px; */
+  }
+}
+
+@media (max-width:380px){
+  #skillsTools>.skillsBox img{
+    /* width: 40px; */
+     max-width: 30px;
+  }
+  #skillsTools{
+    grid-template-columns: repeat(auto-fill, minmax(33%x, 1fr));
+    /* width: 95%; */
+    /* margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* gap: 40px;  */
+    /* gap: 40px; */
+  }
+  .skillsBox{
+    height: 80px;
+  }
+}
+
+@media (max-width: 1044px){
+  #stats-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* border: 1px solid red;/ */
+    /* width: 90%; */
+    /* gap: 80px; */
+    /* margin: auto; */
+  }
+
+  #stats-div > div img{
+    max-width: 300px;
+    /* width: 3000px; */
+  }
+}
+
+@media (max-width: 696px){
+  #stats-div {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  #stats-div > div img{
+    max-width: 250px;
+  }
+}
+
+
+@media (max-width: 580px){
+  #stats-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  #stats-div > div img{
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 473px){
+  #stats-div {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap:10px;
+  }
+
+  #stats-div > div img{
+    max-width: 150px;
   }
 }
