@@ -360,11 +360,11 @@ Hero and Service Section Start
   justify-content: center;
 }
 #stats-div > div img{
-  max-width: 500px;
+  /* max-width: 500px; */
   /* width: 3000px; */
 }
 #github-top-langs{
-  width: 420px;
+  /* width: 420px; */
 }
 /* ===========================================
 Responsive Codes 
@@ -497,6 +497,8 @@ Responsive Codes
   flex-direction: column;
   width: 80%;
   margin: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 #projects-div > div > div{
