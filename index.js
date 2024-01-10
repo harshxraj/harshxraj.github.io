@@ -39,12 +39,12 @@ window.addEventListener("scroll", () => {
 
 document.getElementById("resume-button-1").addEventListener("click", () => {
   window.open(
-    "https://drive.google.com/file/d/1VhjzuWsG7fjzTxYuKrHHUp6j8-F_-OOU/view?usp=sharing"
+    "https://drive.google.com/file/d/1OQzqghaq0O0EbP1__9Z70yKM0G3uqhyh/view?usp=sharing"
   );
 });
 
 document.getElementById("resume-button-2").addEventListener("click", () => {
   window.open(
-    "https://drive.google.com/file/d/1VhjzuWsG7fjzTxYuKrHHUp6j8-F_-OOU/view?usp=sharing"
+    "https://drive.google.com/file/d/1OQzqghaq0O0EbP1__9Z70yKM0G3uqhyh/view?usp=sharing"
   );
 });
