@@ -488,6 +488,81 @@ Responsive Codes
   margin-bottom: 30px;
 }
 
+#projects-div{
+  display: flex;
+  align-items: center;
+  /* height: 1200px; */
+  /* border: 1px solid red; */
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+#projects-div > div > div{
+  /* width: 50%; */
+}
+.project-card{
+  display: flex;
+  display: flex;
+  background-color: #2b2b2b;
+  border: 1px solid #eceff133;
+  /* height: 300px; */
+  padding: 2rem 3rem 1rem 3rem;
+  border-radius: 22px;
+  margin: 1.2rem 0rem;
+}
+.project-card > div{
+  width: 50%;
+}
+.project-title{
+  font-size: 3rem;
+}
+.project-description{
+  font-size: 2.5rem;
+}
+.project-image{
+  width: 100%;
+  border-radius: 13px;
+}
+.project-image-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.project-links{
+  display: flex;
+}
+.project-links > a{
+  border: 1px solid black;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.project-name-description-div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+}
+.tech-stack-div{
+  display: flex;
+  /* border: 1px solid gold; */
+}
+.tech-stack-div > div {
+  border: 1px solid gray;
+  margin: 0.4rem ;
+  background-color: rgb(55, 55, 55);
+  border-radius: 30px;
+  padding: 0.9rem;
+  font-size: 1.2rem;
+}
+
 /* 980px  */
 @media (max-width: 62em) {
   .mobile-navbar-btn {
@@ -569,6 +644,24 @@ Responsive Codes
 }
 
 @media (max-width: 800px) {
+  .project-card{
+    flex-direction: column;
+  }
+  .project-card > div{
+    width: 100%;
+  }
+  .project-image-div{
+    margin-top: 22px;
+  }
+  .project-title{
+    font-size: 2rem;
+  }
+  .tech-stack-div > div {
+    font-size: 0.9rem;
+  }
+  .project-description{
+    font-size: 2rem;
+  }
   #about-div {
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 10px;
@@ -733,6 +826,9 @@ Responsive Codes
   #stats-div > div img{
     max-width: 300px;
     /* width: 3000px; */
+  }
+  #projects-div{
+    width: 90%;
   }
 }
 
