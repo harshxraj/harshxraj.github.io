@@ -6,6 +6,7 @@ const toggleNavbar = () => {
 };
 
 mobile_nav.addEventListener("click", () => toggleNavbar());
+
 const navbarLinks = document.querySelectorAll(".navbar a");
 
 navbarLinks.forEach((link) => {
@@ -13,6 +14,7 @@ navbarLinks.forEach((link) => {
     nav_header.classList.remove("active");
   });
 });
+
 let navbar = document.querySelector("header");
 // let resumeButton = document.querySelector(".resume");
 // let resumeText = document.querySelector(".resume a");
