@@ -768,7 +768,11 @@ Responsive Codes
     padding-left: 25%;
   }
 }
-
+@media (max-width:450px){
+  #left-aboutme-icons {
+    padding-left: 20%;
+  }
+}
 @media (max-width:380px){
   #skillsTools>.skillsBox img{
      max-width: 30px;
