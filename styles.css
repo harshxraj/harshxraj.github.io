@@ -109,7 +109,9 @@ body {
 }
 #left-aboutme {
   padding-left: 10%;
-  /* border: 1px solid cyan; */
+  /* margin: auto; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 #left-aboutme-info {
   display: flex;
@@ -121,8 +123,8 @@ body {
   font-size: 3.2rem;
 }
 #left-aboutme-icons {
-  /* border: 1px solid red; */
   display: flex;
+  width: 70vw;
   margin-left: -1px;
   gap: 15px;
   margin-top: -140px;
@@ -708,13 +710,8 @@ Responsive Codes
   }
   #right-aboutme img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-  }
-  #right-aboutme{
-    /* border: 1px solid cadetblue; */
-    /* display: flex; */
-     /* margin: auto; */
+    width: 120px;
+    height: 120px;
   }
   #left-aboutme h2{
     font-size: 1.8rem;
@@ -722,16 +719,19 @@ Responsive Codes
     padding-top: 5rem;
 
   }
-  #left-aboutme{
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* border: 1px solid cyan; */
-  }
-
   #about{
-    margin-top: -120px;
+    margin-top: -100px;
   }
-  
+  #left-aboutme-icons{
+    margin-top: -110px;
+    gap: 0;
+    /* border: 1px solid rebeccapurple; */
+    /* margin-bottom: 70px; */
+
+  }
+  #left-aboutme-icons > div{
+    width: 80px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -798,20 +798,34 @@ Responsive Codes
 
 @media (max-width:380px){
   #skillsTools>.skillsBox img{
-    /* width: 40px; */
      max-width: 30px;
   }
   #skillsTools{
-    grid-template-columns: repeat(auto-fill, minmax(33%x, 1fr));
-    /* width: 95%; */
-    /* margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    /* gap: 40px;  */
-    /* gap: 40px; */
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
   }
-  .skillsBox{
-    height: 80px;
+  .skillsBox, #about-right > div{
+    height: 60px;
+    width: 120px;
+    font-size: 0.7rem;
+    margin: auto;
+  }
+  #about-right > div h1{
+    font-size: 1.2rem;
+  }
+
+}
+@media (max-width:260px){
+  #skillsTools>.skillsBox img{
+     max-width: 25px;
+  }
+  #skillsTools{
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+  }
+  .skillsBox, #about-right > div{
+    height: 60px;
+    width: 90px;
+    font-size: 0.6rem;
+    margin: auto;
   }
 }
 
