@@ -265,20 +265,16 @@ Hero and Service Section Start
 }
 
 #about-left {
-  /* border: 1px solid yellow; */
   display: flex;
   align-items: center;
 }
 #about-left h1 {
   font-weight: 400;
-  /* font-size: 1.6vw; */
   font-size: 3rem;
   padding: 3.4rem;
-  /* padding-right: 6rem; */
 }
 
-/* #about-right {
-} */
+
 
 #about-right {
   height: 600px;
@@ -315,8 +311,6 @@ Hero and Service Section Start
 .fs:hover,
 .t:hover,
 .ft:hover {
-  /* background-color: #ddd; */
-  /* color: #212121; */
   transition: background-color 0.7s ease, color 0.3s ease;
 }
 #about-right h1 {
@@ -351,22 +345,13 @@ Hero and Service Section Start
 #stats-div {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  /* border: 1px solid red; */
   width: 90%;
   gap: 20px;
   margin: auto;
 }
 #stats-div div{
-  /* border: 3px solid cyan; */
   display: flex;
   justify-content: center;
-}
-#stats-div > div img{
-  /* max-width: 500px; */
-  /* width: 3000px; */
-}
-#github-top-langs{
-  /* width: 420px; */
 }
 /* ===========================================
 Responsive Codes 
@@ -422,9 +407,7 @@ Responsive Codes
   /* padding-left: 40px; */
   --hsl: var(--hue), var(--saturation), var(--lightness);
 }
-.contacts div:nth-child(1) {
-  /* margin-top: 80px; */
-}
+
 #name-input {
   --hue: 165;
   --saturation: 82.26%;
@@ -461,14 +444,6 @@ Responsive Codes
   resize: none;
   margin-top: 5px;
 }
-#contacts-details{
-  /* border: 1px solid rebeccapurple; */
-  /* height: 100%; */
-  /* display: flex; */
-  /* flex-direction: column; */
-   /* justify-content: start; */
-   /* align-content: flex-start; */
-}
 #contacts-details h2 {
   margin: 20px;
   font-weight: 400;
@@ -493,8 +468,6 @@ Responsive Codes
 #projects-div{
   display: flex;
   align-items: center;
-  /* height: 1200px; */
-  /* border: 1px solid red; */
   justify-content: center;
   flex-direction: column;
   width: 80%;
@@ -503,9 +476,6 @@ Responsive Codes
   margin-bottom: 40px;
 }
 
-#projects-div > div > div{
-  /* width: 50%; */
-}
 .project-card{
   display: flex;
   display: flex;
@@ -732,6 +702,9 @@ Responsive Codes
   #left-aboutme-icons > div{
     width: 80px;
   }
+  #left-aboutme-icons {
+    padding-left: 40%;
+  }
 }
 
 @media (max-width: 400px) {
@@ -791,8 +764,8 @@ Responsive Codes
     margin-bottom: 40px;
     /* gap: 40px; */
   }
-  .skillsBox{
-    /* margin-right: 300px; */
+  #left-aboutme-icons {
+    padding-left: 25%;
   }
 }
 
@@ -811,6 +784,9 @@ Responsive Codes
   }
   #about-right > div h1{
     font-size: 1.2rem;
+  }
+  #left-aboutme-icons {
+    padding-left: 2%;
   }
 
 }
