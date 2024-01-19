@@ -56,3 +56,27 @@ document.getElementById("resume-button-2").addEventListener("click", () => {
     "https://drive.google.com/file/d/10WO8zgJOM11a7QDOMwbid5s4YPpLNhfh/view?usp=drive_link"
   );
 });
+
+// gsap
+// Nav animation
+let navTimeline = gsap.timeline();
+navTimeline.from(".logo", {
+  x: -50,
+  opacity: 0,
+  delay: 0.5,
+});
+navTimeline.from(".navbar-list li", {
+  y: -20,
+  opacity: 0,
+  stagger: 0.2,
+});
+navTimeline.to(".logo", {
+  duration: 3,
+  rotationZ: 180,
+  rotationX: 180,
+  rotationY: 180,
+  transformOrigin: "50% 50%",
+  repeat: -1,
+  yoyo: true,
+  ease: "power4.inOut",
+});
