@@ -70,13 +70,13 @@ navTimeline.from(".navbar-list li", {
   opacity: 0,
   stagger: 0.2,
 });
-navTimeline.to(".logo", {
-  duration: 3,
-  rotationZ: 180,
-  rotationX: 180,
-  rotationY: 180,
-  transformOrigin: "50% 50%",
-  repeat: -1,
-  yoyo: true,
-  ease: "power4.inOut",
-});
+// navTimeline.to(".logo", {
+//   duration: 3,
+//   rotationZ: 180,
+//   rotationX: 180,
+//   rotationY: 180,
+//   transformOrigin: "50% 50%",
+//   repeat: -1,
+//   yoyo: true,
+//   ease: "power4.inOut",
+// });
