@@ -754,6 +754,18 @@ Responsive Codes
     gap: 30px;
   }
 }
+@media (min-width: 699px) and (max-width: 1044px) {
+  #right-aboutme img{
+    height: 200px;
+    width: 200px;
+  }
+  #home{
+    /* border: 1px solid gold; */
+  }
+  #left-aboutme-info{
+    padding-top: 90px;
+  }
+}
 
 @media (max-width:424px){
   #skillsTools{
@@ -810,9 +822,8 @@ Responsive Codes
   #about-left > h1{
     font-size: 1.5rem;
   }
-  #about-right{
-    margin-top: -50px;
-    margin-bottom: 0px;
+  #about{
+    margin-bottom: 1-z;
   }
   #home{
     width: 100%;
@@ -836,6 +847,7 @@ Responsive Codes
   #projects-div{
     width: 90%;
   }
+ 
 }
 
 @media (max-width: 696px){
