@@ -690,7 +690,7 @@ Responsive Codes
 
   }
   #about{
-    margin-top: -100px;
+    margin-top: -60px;
   }
   #left-aboutme-icons{
     margin-top: -110px;
@@ -806,6 +806,16 @@ Responsive Codes
     width: 90px;
     font-size: 0.6rem;
     margin: auto;
+  }
+  #about-left > h1{
+    font-size: 1.5rem;
+  }
+  #about-right{
+    margin-top: -50px;
+    margin-bottom: 0px;
+  }
+  #home{
+    width: 100%;
   }
 }
 
