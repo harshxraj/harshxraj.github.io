@@ -47,13 +47,13 @@ window.addEventListener("scroll", () => {
 
 document.getElementById("resume-button-1").addEventListener("click", () => {
   window.open(
-    "https://drive.google.com/file/d/10WO8zgJOM11a7QDOMwbid5s4YPpLNhfh/view?usp=drive_link"
+    "https://drive.google.com/file/d/1IJhFQVhd5vm6CQwHbhDu7rAxGYkm3L1l/view?usp=sharing"
   );
 });
 
 document.getElementById("resume-button-2").addEventListener("click", () => {
   window.open(
-    "https://drive.google.com/file/d/10WO8zgJOM11a7QDOMwbid5s4YPpLNhfh/view?usp=drive_link"
+    "https://drive.google.com/file/d/1IJhFQVhd5vm6CQwHbhDu7rAxGYkm3L1l/view?usp=sharing"
   );
 });
 
