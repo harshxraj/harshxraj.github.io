@@ -526,6 +526,8 @@ Responsive Codes
 }
 .tech-stack-div{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   /* border: 1px solid gold; */
 }
 .tech-stack-div > div {
