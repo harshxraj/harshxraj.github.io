@@ -34,16 +34,20 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const options = {
-//     strings: ["Full stack web developer"],
-//     typeSpeed: 50, // Typing speed in milliseconds
-//     backSpeed: 25, // Backspacing speed in milliseconds
-//     loop: true, // Loop the animation infinitely
-//   };
+document.addEventListener("DOMContentLoaded", function () {
+  const options = {
+    strings: [
+      "Full stack developer",
+      "Backend developer",
+      "Frontend developer",
+    ],
+    typeSpeed: 50, // Typing speed in milliseconds
+    backSpeed: 25, // Backspacing speed in milliseconds
+    loop: true, // Loop the animation infinitely
+  };
 
-//   const typed = new Typed(".typed-output", options);
-// });
+  const typed = new Typed(".typed-output", options);
+});
 
 document.getElementById("resume-button-1").addEventListener("click", () => {
   window.open(
