@@ -212,6 +212,7 @@ Hero and Service Section Start
   background-color: #ddd;
   padding-top: 10px;
   user-select: none;
+  word-spacing: 20px;
 }
 .scrolling-text-container::-webkit-scrollbar {
   display: none;
